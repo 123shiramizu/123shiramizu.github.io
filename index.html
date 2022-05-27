@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>tom猫小游戏无声音</title>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0}
+.tombox{
+    width:350px;
+    height:520px;
+    margin:100px auto;
+    position: relative;
+}
+    .tombox img:nth-child(1){
+        width:350px;
+       height:520px 
+    } 
+    .tombox img{
+        position:absolute
+    }
+    .tombox img:nth-child(2){
+        top:35%;
+        left:0
+    }
+    .tombox img:nth-child(3){
+        top:35%;
+        right:0
+    }
+    .tombox img:nth-child(4){
+        top:55%;
+        left:0
+    }
+    .tombox img:nth-child(5){
+        top:55%;
+        right:0
+    }
+    .tombox img:nth-child(6){
+        top:75%;
+        left:0
+    }
+    .tombox img:nth-child(7){
+        top:75%;
+        right:0
+    }
+    body{
+        background: black;
+    }
+    p{
+color:white;
+text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="tombox">
+        <img  class="tomcat" src="Animations/eat/eat_00.jpg">
+        <img id="cymbal" src="Buttons/cymbal/cymbal.png">
+        <img id="drink" src="Buttons/drink/drink.png">
+        <img id="eat"src="Buttons/eat/eat.png">
+        <img id="fart"src="BUttons/fart/fart.png">
+        <img id="pie"src="Buttons/pie/pie.png">
+        <img id="scratch"src="buttons/scratch/scratch.png">
+    </div>
+    <p>写游戏好难，回去学轮播器了拜拜</p>
+    <script type="text/javascript">
+        var cat=document.querySelector(".tomcat")
+        var timer=null
+        //1-9前面加0
+
+        function setname(index){
+if(index<10){
+    return "0"+index
+}
+else{
+    return index
+}
+        }
+        
+        //src路径拼接Animations/eat/eat_00.jpg
+function setsrc(name,index){
+    return "Animations/"+name+"/"+name+"_"+setname(index)+".jpg"
+}
+//设计动画方法,sum图片张数
+
+function aplay(name,sum){
+    clearInterval(timer)
+    var index=0
+    timer=setInterval(
+        function (){
+            cat.src=setsrc(name,index)
+            index++
+            if(index >=sum){
+                clearInterval(timer)
+            }
+        },100
+    )
+}
+document.querySelector("#eat").onclick=function(){aplay("eat",40)
+}
+document.querySelector("#drink").onclick=function(){aplay("drink",80)}
+document.querySelector("#cymbal").onclick=function(){aplay("cymbal",13)}
+document.querySelector("#fart").onclick=function(){aplay("fart",28)}
+document.querySelector("#pie").onclick=function(){aplay("pie",24)}
+document.querySelector("#scratch").onclick=function(){aplay("scratch",56)}
+
+    </script>
+</body>
+</html>
