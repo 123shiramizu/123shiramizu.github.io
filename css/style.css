@@ -881,7 +881,7 @@
 .right1{
 	position: relative;
 	margin-left: 370px;
-	margin-top: -170px;
+	margin-top: -108px;
 }
 
 .right2{
@@ -891,8 +891,8 @@
 }
 .middle1{
 	position: absolute;
-	margin-left: 200px;
-	top: 220px;
+	margin-left: 230px;
+	top: 20px;
 	transition-delay:7s;
 }
 /* 改图大小 */
@@ -917,8 +917,6 @@
 	border: #ee9ca7;
 	outline-color: none;
 	color: #fff;
-	height: 10px;
-	margin-bottom: 10%;
 }
 .bx{position: absolute;
 	margin-left: 350px;
