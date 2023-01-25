@@ -881,13 +881,13 @@
 .right1{
 	position: relative;
 	margin-left: 370px;
-	margin-top: -108px;
+	margin-top: -150px;
 }
 
 .right2{
 	position: relative;
 	margin-left: 410px;
-	top:-60%
+	top:-68%
 }
 .middle1{
 	position: absolute;
@@ -902,7 +902,7 @@
 }
 #gb{
 	text-align: center;
-	font-size: 12px;
+	font-size: 15px;
 	font-family: mirosoft yahei;
 	font-color:#000
 }
