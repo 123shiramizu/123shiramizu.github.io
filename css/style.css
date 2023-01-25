@@ -147,8 +147,7 @@
 	border-radius: 25px;
 	position: absolute;
 	left: 5%;
-	top: 5%;
-	margin-bottom:50%;
+	top: 10%;
 	overflow: hidden;
 	transform-origin:center bottom;
 	animation:box_to_point 23.5s 0s,bounce 2.5s 23.5s;
@@ -787,7 +786,7 @@
 	background-color: rgba(255,255,255,0.6);
 	border-radius: 8px;
 	position: absolute;
-	left: 25%;
+	left: 10%;
 	top:10%;
 	overflow: hidden;
 	opacity: 0;
@@ -882,24 +881,24 @@
 .right1{
 	position: relative;
 	margin-left: 370px;
-	margin-top: -190px;
+	margin-top: -170px;
 }
 
 .right2{
 	position: relative;
 	margin-left: 410px;
-	top:-80%
+	top:-60%
 }
 .middle1{
 	position: absolute;
-	margin-left: 250px;
+	margin-left: 200px;
 	top: 220px;
 	transition-delay:7s;
 }
 /* 改图大小 */
 .hnt{
-	width: 12px;
-	height: 120px;
+	width: 110px;
+	height: 110px;
 }
 #gb{
 	text-align: center;
@@ -918,6 +917,8 @@
 	border: #ee9ca7;
 	outline-color: none;
 	color: #fff;
+	height: 10px;
+	margin-bottom: 10%;
 }
 .bx{position: absolute;
 	margin-left: 350px;
