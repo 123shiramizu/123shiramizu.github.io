@@ -887,12 +887,12 @@
 .right2{
 	position: relative;
 	margin-left: 410px;
-	top:-68%
+	top:-66%
 }
 .middle1{
 	position: absolute;
 	margin-left: 230px;
-	top: 20px;
+	top: 190px;
 	transition-delay:7s;
 }
 /* 改图大小 */
