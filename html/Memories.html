@@ -99,10 +99,10 @@
             <!-- <img class="ly-img11" src="../img/HappyBirthday.png" style="width:100%;height:100%"> -->
           <!-- </div> -->
           <div class="ly-txt14">
-            <div class="left1"><img  id='pic1'class="hnt" src="../img/c1s.jpg" ><p>Cathy夏季ver.</p></div>
-            <div class="left2"><img id="pic2" class="hnt" src="../img/c1a.jpg" ><p>Cathy秋季ver.</p></div>
-            <div class="right1"><img id="pic3" class="hnt" src="../img/c2w.jpg" ><p>Cathy冬季ver.</p></div>
-            <div class="right2"><img id='pic4' class="hnt" src="../img/c1g.jpg" ><p>Cathy流汗ver.</p></div>
+            <div class="left1"><img  id='pic1'class="hnt" src="../img/c1s.jpg" ><p class="by">Cathy夏季ver.</p></div>
+            <div class="left2"><img id="pic2" class="hnt" src="../img/c1a.jpg" ><p class="by">Cathy秋季ver.</p></div>
+            <div class="right1"><img id="pic3" class="hnt" src="../img/c2w.jpg" ><p class="by">Cathy冬季ver.</p></div>
+            <div class="right2"><img id='pic4' class="hnt" src="../img/c1g.jpg" ><p class="by">Cathy流汗ver.</p></div>
             <div class="middle1"><p id="gb">希望凯西西永远保持可爱❤<br>快看！我要拼一颗爱心啦</p></div>
             
           </div>  
@@ -246,6 +246,7 @@ var pic2=document.querySelector('#pic2')
 var pic3=document.querySelector('#pic3')
 var pic4=document.querySelector('#pic4')
 var txt11=document.querySelector('#gb')
+var bylist=document.querySelectorAll('.by')
 btn11.onclick=function(){ if (btn11.innerHTML==='祝点这个按钮的人<br>生日快乐'){
   console.log('1')
  
@@ -261,6 +262,9 @@ btn11.onclick=function(){ if (btn11.innerHTML==='祝点这个按钮的人<br>生
   btn11.innerHTML='我想再看看双人照'
   window.location.href='./EasterEgg.html'
 }else{
+  bylist.forEach(function(e){
+    e.innerText=''
+  })
   pic1.src='../img/d1s.jpg' 
   
   pic2.src='../img/d1a.jpg'
@@ -268,7 +272,7 @@ btn11.onclick=function(){ if (btn11.innerHTML==='祝点这个按钮的人<br>生
   pic3.src='../img/d2w.jpg'
 
   pic4.src='../img/d1g.jpg'
-  
+  pic4.style.top='120px'
   txt11.innerText="没错，我就是你的唯粉+‘土地学双子星的cp粉’"
   btn11.innerHTML='祝点这个按钮的人<br>生日快乐'
 
