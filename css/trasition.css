@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family:Microsoft YaHei;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    background-color:#ee9ca7 ;
+}
+.text{
+    font-size: 60px;
+    color: white;
+    font-weight: 900;
+    position: relative;
+}
+.text::after{
+
+    content: "  ";
+    position: absolute;
+    width: 36px;
+    height: 14px;
+    background-color: red;
+    border-radius: 10px;
+    left: -54px;
+    animation: trans 1.1s linear infinite;
+}
+@keyframes trans{
+    20%{
+        opacity: 1;
+
+    }
+    80%{
+        opacity: 1;
+
+    }
+    100%{
+        left: calc(100%+18%);
+    }
+}
+.text span{
+    display: inline-block;
+    animation: wave 1.1s linear infinite;
+    
+
+}
+.text span:nth-child(2){
+    animation-delay:100ms ;
+}
+.text span:nth-child(3){
+    animation-delay:200ms ;
+}
+.text span:nth-child(4){
+    animation-delay:300ms ;
+}
+.text span:nth-child(5){
+    animation-delay:400ms ;
+}
+.text span:nth-child(6){
+    animation-delay:500ms ;
+}
+.text span:nth-child(7){
+    animation-delay:600ms ;
+}
+.text span:nth-child(8){
+    animation-delay:700ms ;
+}
+.text span:nth-child(9){
+    animation-delay:800ms ;
+}
+.text span:nth-child(10){
+    animation-delay:900ms ;
+}
+.text span:nth-child(11){
+    animation-delay:1000ms ;
+}
+
+@keyframes wave {
+	from {
+		opacity: 0;
+	}
+
+	to {
+        opacity: 1;
+	}
+}
