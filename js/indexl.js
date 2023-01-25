@@ -11,7 +11,7 @@ var S = {
     if (i !== -1) {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
-      S.UI.simulate('Dear 李文丽|祝你第22个破壳日|生日快乐|happy birthday|');
+      S.UI.simulate('Dear Cathy|第22个破壳日到啦|生日快乐|happy birthday|');
     }
 
     S.Drawing.loop(function () {
