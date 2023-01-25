@@ -146,8 +146,8 @@
 	background-color:#FFF;
 	border-radius: 25px;
 	position: absolute;
-	left: 48%;
-	bottom: 50%;
+	left: 5%;
+	top: 5%;
 	margin-bottom:50%;
 	overflow: hidden;
 	transform-origin:center bottom;
